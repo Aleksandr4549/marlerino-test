@@ -1,0 +1,14 @@
+.offers-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers-page_block {
+  margin-right: 1.5rem;
+
+  @media screen and (max-width: 1350px) {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

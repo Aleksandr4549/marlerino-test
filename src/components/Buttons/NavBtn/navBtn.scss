@@ -1,0 +1,29 @@
+.nav_btn {
+  display: inline-flex;
+  align-items: center;
+  padding: .8rem .5rem .8rem 1.7rem;
+  width: 13.5rem;
+  color: #525252;
+  line-height: 125%;
+  letter-spacing: -0.05em;
+  border: 1px solid transparent;
+  border-radius: .5rem; 
+  text-decoration: none;
+}
+
+.nav_btn__active {
+  color: #F5F5F4;
+  background-color: #333;
+}
+
+.nav_btn__active_dark {
+  color: #525252;
+  border: 1px solid #55EF14;
+  background-color: #55EF14;
+}
+
+.nav_btn__icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1.5rem;
+}

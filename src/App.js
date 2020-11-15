@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { connect } from 'react-redux';
+import { Route } from 'react-router-dom';
 
-function App() {
+import Sidebar from './components/Sidebar/Sidebar';
+import OffersPage from './components/OffersPage/OffersPage';
+import SettingsbarContainer from './components/SettingsBar/SettingsbarContainer';
+import AppsPage from './components/AppsPage/Apps/AppsPage';
+import './App.scss';
+
+function App({theme}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={theme === 'dark' ? 'app app_dark' : 'app'}>
+        <Sidebar />
+        <div className='app__content'>
+          <SettingsbarContainer />
+          <Route exact path={['/', '/offers']} render={() => <OffersPage />} />
+          <Route exact path={'/apps'} render={() => <AppsPage />} />
+        </div>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    theme: state.app.theme
+  }
+};
+
+export default connect(mapStateToProps, null)(App);

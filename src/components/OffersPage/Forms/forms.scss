@@ -1,0 +1,133 @@
+@mixin textStyle {
+  font-size: .9rem;
+  line-height: 1.1rem;
+
+  @media screen and (max-width: 1530px) {
+    font-size: .8rem;
+  }
+
+  @media screen and (max-width: 1530px) {
+    font-size: .7rem;
+  }
+}
+
+.form {
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  width: 46rem;
+  background: rgba(245, 245, 244, 0.7);
+  border: 1px solid rgba(245, 245, 244, 0.7);
+  border-radius: 1rem;
+
+  @media screen and (max-width: 1850px) {
+    max-width: 40rem;
+  }
+
+  @media screen and (max-width: 1700px) {
+    max-width: 35rem;
+  }
+
+  @media screen and (max-width: 1530px) {
+    padding: 1rem;
+    max-width: 30rem;
+  }
+
+  @media screen and (max-width: 1350px) {
+    max-width: 25rem;
+    padding: 1rem;
+  }
+}
+
+.form_dark {
+  background-color: rgba(51, 51, 51, 0.65);
+}
+
+.form-inputs_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-inputs_block__long {
+  margin-left: 1.5rem;
+  width: 60%;
+}
+
+.form-inputs_block__input {
+  padding: .7rem 1rem;
+  width: 100%;
+  @include textStyle;
+  color: #999;
+  background-color: #EBEBEA;
+  border: 1px solid #EBEBEA;
+  border-radius: .5rem;
+  box-shadow: inset 0px 0.5px 4px rgba(96, 97, 112, 0.32);
+  outline: none;
+}
+
+.form-inputs_block__input_dark {
+  color: #F5F5F4;
+}
+
+.form-inputs_block__input_error {
+  border: 1px solid red;
+}
+
+.form-inputs_block__text {
+  padding: 0 1rem .5rem;
+  @include textStyle;
+  color: #525252;
+}
+
+.form_info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.form_info__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form_info__text__icon {
+  display: flex;
+  margin-right: .6rem;
+}
+
+.form_info__text__link {
+  @include textStyle;
+  color: #707070;
+
+  & a {
+    display: inline-block;
+    color: #000;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.form_info__text__link_dark {
+  color: #F5F5F4;
+
+  & a {
+    display: inline-block;
+    color: #F5F5F4;
+    border-bottom: 1px solid #F5F5F4;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.form_info__text__link_dark {
+  color: #F5F5F4;
+}
+
+.form-inputs_block-wrapper {
+  padding-right: 1.5rem;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}

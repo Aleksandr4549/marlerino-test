@@ -1,0 +1,90 @@
+.sheet {
+  padding: 2rem;
+  max-width: 46rem;
+  background: rgba(245, 245, 244, 0.7);
+  border: 1px solid rgba(245, 245, 244, 0.7);
+  border-radius: 1rem;
+  overflow: auto;
+
+  @media screen and (max-width: 1850px) {
+    max-width: 40rem;
+  }
+
+  @media screen and (max-width: 1700px) {
+    max-width: 35rem;
+  }
+
+  @media screen and (max-width: 1530px) {
+    max-width: 30rem;
+  }
+
+  @media screen and (max-width: 1350px) {
+    max-width: 25rem;
+    padding: 1rem;
+  }
+}
+
+.sheet_dark {
+  background-color: rgba(51, 51, 51, 0.65);
+}
+
+.sheet_network {
+  height: calc(46vh - 2rem);
+}
+
+.sheet_offer {
+  height: calc(60vh - 2rem);
+}
+
+.sheet-titles {
+  display: flex;
+  padding-bottom: 1rem;
+  
+  & span {
+    padding-right: 1.5rem;
+    width: 25%;
+    color: #707070;
+    font-size: .9rem;
+    line-height: 1.1rem;
+  }
+}
+
+.sheet-titles_dark {
+  & span {
+    color: #F5F5F4;
+  }
+}
+
+.sheet-line_container {
+  display: flex;
+  position: relative;
+  padding: .5rem 0;
+  // height: calc(36vh - 2rem);
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+  overflow-x: none;
+}
+
+.sheet-line_container__input {
+  padding-right: 1.5rem;
+  width: 25%;
+  color: #333;
+  background: transparent;
+  font-size: 12px;
+  line-height: 125%;
+  border: none;
+  outline: none; 
+}
+
+.sheet-line_container__input_dark {
+  color: #F5F5F4;
+}
+
+.sheet-line_container__icon {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  right: 0;
+  bottom: .6rem;
+  cursor: pointer;
+}

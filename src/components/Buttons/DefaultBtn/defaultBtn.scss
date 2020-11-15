@@ -1,0 +1,58 @@
+.default_btn {
+  & button {
+    padding: .8rem 2rem;
+    width: 11rem;
+    color: #333;
+    border: 1px solid #55EF14;
+    border-radius: .5rem;
+    background-color: #55EF14;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 1530px) {
+      max-width: 10rem;
+    }
+
+    @media screen and (max-width: 1350px) {
+      max-width: 8rem;
+      font-size: 10px;
+    }
+  }
+}
+
+.default_btn_middle {
+  & button {
+    width: 208px;
+
+    @media screen and (max-width: 1530px) {
+      max-width: 10rem;
+    }
+
+    @media screen and (max-width: 1350px) {
+      max-width: 8rem;
+      font-size: 10px;
+    }
+  }
+}
+
+.default_btn_long {
+  & button {
+    width: 243px;
+
+    @media screen and (max-width: 1700px) {
+      max-width: 12rem;
+    }
+
+    @media screen and (max-width: 1530px) {
+      max-width: 10rem;
+    }
+
+    @media screen and (max-width: 1350px) {
+      max-width: 8rem;
+      font-size: 10px;
+    }
+  }
+}

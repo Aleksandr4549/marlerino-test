@@ -1,0 +1,29 @@
+.settingsbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 2rem 0 66px;
+  text-align: right;
+
+  @media screen and (max-width: 1850px) {
+    // max-width: 90rem;
+  }
+
+  @media screen and (max-width: 1530px) {
+    padding: 1rem 0 66px;
+  }
+}
+
+.settingsbar-icon {
+  margin-right: 1.25rem;
+  display: inline;
+}
+
+.settingsbar-text {
+  display: inline;
+  text-transform: uppercase;
+}
+
+.settingsbar-text_dark {
+  color: #EBEBEA;
+}

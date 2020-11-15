@@ -1,0 +1,28 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.3rem 2rem;
+  max-width: 17.5rem;
+  background-color: rgba(245, 245, 244, 0.7);
+
+  @media screen and (max-width: 1350px) {
+    max-width: 15rem;
+  }
+}
+
+.sidebar_dark {
+  background-color: rgba(51, 51, 51, 0.65);
+}
+
+.sidebar-logo {
+  padding-bottom: 2.3rem;
+  max-width: 13.5rem;
+}
+
+.sidebar-text {
+  color: #999;
+  text-align: center;
+  line-height: 125%;
+  letter-spacing: -0.05em;
+}

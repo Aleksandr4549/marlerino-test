@@ -1,0 +1,35 @@
+.promo {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  max-width: 46rem;
+  border: 1px solid rgba(245, 245, 244, 0.7);
+  border-radius: .5rem;
+  background-color: rgba(245, 245, 244, 0.7);
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 1850px) {
+    padding: 2rem;
+    max-width: 40rem;
+  }
+
+  @media screen and (max-width: 1700px) {
+    padding: 41px;
+    max-width: 35rem;
+  }
+
+  @media screen and (max-width: 1530px) {
+    max-width: 30rem;
+  }
+
+  @media screen and (max-width: 1350px) {
+    max-width: 25rem;
+  }
+}
+
+.promo_dark {
+  background-color: rgba(51, 51, 51, 0.65);
+}

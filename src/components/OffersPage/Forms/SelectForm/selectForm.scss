@@ -1,0 +1,76 @@
+@mixin blockStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 208px;
+  color: #F5F5F4;
+  background-color: #525252;
+  border: 1px solid #525252;
+  border-radius: .5rem;
+  box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+  cursor: pointer;
+
+  // @media screen and (max-width: 1700px) {
+  //   max-width: 12rem;
+  // }
+
+  @media screen and (max-width: 1530px) {
+    max-width: 10rem;
+  }
+}
+
+.select__list {
+  position: relative;
+  padding: .5rem 1rem;;
+  @include blockStyle;
+}
+
+.select__list__title {
+  font-size: .9rem;
+  letter-spacing: -0.05em;
+  @include blockStyle;
+}
+
+.select__list__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.select__list__content_visible {
+  display: block;
+  top: 102%;
+  animation-duration: .3s;
+  animation-name: menu;
+
+  & div {
+    margin-top: 1px;
+    padding: .7rem 1rem;
+    @include blockStyle;
+    transition: .3s linear all;
+
+    &:hover {
+      background-color: lighten(#525252, 10%);
+      transition: .3s linear all;
+    }
+  }
+
+  @keyframes menu {
+    from {
+      top: 0;
+    }
+
+    to {
+      top: 102%;
+    }
+  }
+}
+
+.select__list__arrow__open {
+  transform: rotate(180deg);
+}
+
+.select__list__burger {
+
+}
