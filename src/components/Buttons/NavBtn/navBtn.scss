@@ -9,6 +9,10 @@
   border: 1px solid transparent;
   border-radius: .5rem; 
   text-decoration: none;
+
+  @media screen and (max-width: 1350px) {
+    width: 10rem;
+  }
 }
 
 .nav_btn__active {

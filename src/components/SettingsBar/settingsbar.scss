@@ -5,12 +5,12 @@
   padding: 2rem 0 66px;
   text-align: right;
 
-  @media screen and (max-width: 1850px) {
-    // max-width: 90rem;
-  }
-
   @media screen and (max-width: 1530px) {
     padding: 1rem 0 66px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: 1rem 0 2rem;
   }
 }
 

@@ -1,14 +1,13 @@
 .app {
   display: flex;
-  padding: 2rem 1.5rem 1.5rem 2rem;
+  padding: 2rem 1.5rem;
   max-width: 1900px;
   min-height: 100vh;
   background-color: #D6D6D6;
-  background-image: url('./assets/images/b-3.png');
+  background-image: url('./assets/images/background-offers.png');
   background-repeat: no-repeat;
   background-position: 50% 75%;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: contain;
 }
 
 .app_dark {
@@ -17,4 +16,5 @@
 
 .app__content {
   margin-left: 1.5rem;
+  width: 100%;
 }

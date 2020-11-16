@@ -19,8 +19,15 @@
   }
 
   @media screen and (max-width: 1350px) {
+    max-width: 32rem;
+  }
+
+  @media screen and (max-width: 1320px) {
+    max-width: 28rem;
+  }
+
+  @media screen and (max-width: 1200px) {
     max-width: 25rem;
-    padding: 1rem;
   }
 }
 
@@ -29,11 +36,31 @@
 }
 
 .sheet_network {
-  height: calc(46vh - 2rem);
+  height: calc(100vh - 623px);
+
+  @media screen and (max-width: 1530px) {
+    height: calc(100vh - 565px);
+  }
+
+  @media screen and (max-width: 1350px) {
+    height: calc(100vh - 575px);
+  }
+
+  @media screen and (max-width: 1350px) {
+    height: calc(100vh - 565px);
+  }
 }
 
 .sheet_offer {
-  height: calc(60vh - 2rem);
+  height: calc(100vh - 400px);
+
+  @media screen and (max-width: 1530px) {
+    height: calc(100vh - 364px);
+  }
+
+  @media screen and (max-width: 1530px) {
+    height: calc(100vh - 367px);
+  }
 }
 
 .sheet-titles {
@@ -59,7 +86,6 @@
   display: flex;
   position: relative;
   padding: .5rem 0;
-  // height: calc(36vh - 2rem);
   border-bottom: 1px solid #ccc;
   overflow: auto;
   overflow-x: none;
